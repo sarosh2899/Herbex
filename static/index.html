@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title>Herbex ignite me</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" />
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="/static/main.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="logo">
+      <img class="img-fluid" alt="" src="/static/public/logo.png" style="width: 90px; height: 40px" />
+    </div>
+    <div class="container">
+      <div class="headline">
+        <img class="img-fluid mt-5 col-xxl-11" alt="" src="/static/public/igniteyourhottestshape@3x.png" />
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <!-- Form Section -->
+  <section id="main" class="bg-black">
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <img class="img-fluid mt-5 col-xxl-9 col-xl-10 col-md-11" alt="" src="/static/public/After-and-before.png" />
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <div class="col d-flex justify-content-center mt-5">
+        <img class="img-fluid col-xxl-8 col-md-9" alt=""
+          src="/static/public/this-is-a-herbex-project-that-uses-ai-to-create-your-hottest-sh@3x.png" />
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4 upload-img-left d-md-flex justify-content-md-center align-items-center mt-md-5">
+          <div class="row text-center d-flex justify-content-center mt-5 py-5 py-md-0 mt-md-0">
+            <div class="col-md-12 profile_image-prev mt-5 mt-md-0">
+              <img class="profile_image profile_uploader-btn" alt="user image" src="/static/public/Upload Button.png" />
+            </div>
+            <div
+              class="col-md-12 col-xxl-10 col-xl-11 col-sm-7 col-7 col-10 d-flex justify-content-center mt-5 mt-md-3">
+              <div class="high-res text-white">
+                High - res solo photos looking straight at the camera without
+                glasses or eyewear works best
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-5 col-xxl-4 col-sm-9 col-md-6 col-11 group-item offset-md-1 mt-md-5 mb-5">
+          <form id="generate_form" enctype="multipart/form-data" name="ignite_form">
+            <p class="text-center mt-4 form_text">
+              I want to be represented as
+            </p>
+            <input class="profile_input-button" id="image" name="img" accept="image/png" type="file" hidden />
+            <div class="row mt-4 d-flex justify-content-center">
+              <div class="col-md-4 col-sm-4">
+                <input type="radio" class="btn-check" name="gender" value="female" id="danger-outlined" autocomplete="off" checked
+                   />
+                <label class="btn radio-button btn-outline-light mb-2" for="danger-outlined">FEMALE</label>
+              </div>
+              <div class="col-md-4 offset-md-2 col-sm-4">
+                <input type="radio" class="btn-check" name="gender" value="male" id="success-outlined"
+                  autocomplete="off" />
+                <label class="btn radio-button btn-outline-light" for="success-outlined">MALE</label>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-4">
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+              </div>
+
+              <div class="col-md-10 mt-4">
+                <input type="text" class="form-control" id="surname" name="surname" placeholder="Surname" />
+              </div>
+
+              <div class="col-md-10 mt-4">
+                <input type="number" class="form-control" id="age" name="age" placeholder="Age" />
+              </div>
+
+              <div class="col-md-10 mt-4">
+                <input type="text" class="form-control" id="city" name="city" placeholder="City" />
+              </div>
+
+              <div class="col-md-10 mt-4">
+                <input type="email" class="form-control" id="email"  required name="email" placeholder="Email" />
+              </div>
+
+              <div class="form-check col-md-9 col-11 mt-3">
+                <input type="checkbox" name="agree_checkbox" class="form-check-input" id="validationFormCheck1" />
+                <label class="form-check-label col-md-9 text-nowrap" id="checkbox_label" for="validationFormCheck1">I
+                  agree to the
+                  <a href="#" style="text-decoration: none">Terms and Conditions</a></label>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="button" onclick="form_validate()" class="btn ignite-button mt-3 mb-2" id="Submit_Button">
+                  IGNITE_ME
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scenes Section -->
+  <section>
+    <div class="background">
+      <div class="container d-flex justify-content-center">
+        <img class="img-fluid col-xl-10 mt-5" alt="" src="/static/public/try-a-different-a-scene@2x.png" />
+      </div>
+      <div class="mt-5 container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div class="col-xxl-4 col-xl-4 col-md-6 d-flex justify-content-center">
+            <div class="offset-lg-0 left-box mb-4">
+              <div class="col left-bottom-img"></div>
+              <div class="bg-white text-box d-flex justify-content-center align-items-center">
+                <span class="bottom-text">BEACH</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-md-6 d-flex justify-content-center">
+            <div class="col-3 left-box">
+              <div class="col right-bottom-img bg-black"></div>
+              <div class="bg-white text-box d-flex justify-content-center align-items-center">
+                <span class="bottom-text">GYM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin-top: -20px">
+        <img class="img-fluid container d-flex justify-content-center col-md-12 col-xl-10 col-sm-12 col-12 col-xxl-9"
+          alt="" src="/static/public/torch-stubborn-fat--copy@2x.png" />
+      </div>
+      <section id="footer" class="mt-5">
+        <div class="footer-banner" data-aos="zoom-in" data-aos-delay="100">
+          <div class="container">
+            <div class="maxout-text">
+              <img class="img-fluid mt-5 col-xxl-11" style="width: 323px; height: 252px" alt=""
+                src="/static/public/Maxout_result.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ======= Popup Section ======= -->
+  <div class="popup">
+    <div class="box">
+
+      <div class="img-area">
+        <div class="img"></div>
+        <div>
+          <img src="/static/public/igniteyourhottestshape@3x.png" class="img-fluid" style="margin-top: 300px" alt="" />
+        </div>
+      </div>
+
+      <div class="form">
+        <div class="close">&times;</div>
+
+        <span class="generats" id="generats"> 
+          <div
+            class="d-flex justify-content-md-between justify-content-lg-between justify-content-center justify-content-xl-between">
+            <div class="col d-flex justify-content-center">
+              <span id="generate_img_1"></span>
+              <!-- <img src="/static/public/left-bottom-img.png" class="img-fluid" style="width: 155px; height: 165px" -->
+                <!-- alt="" /> -->
+            </div>
+            <div class="col d-flex justify-content-center offset-1">
+              <span id="generate_img_2"></span>
+            </div>
+          </div>
+          <p class="mt-4 text-center" style="font-size: 14px">
+            Well, aren't you a hottie! Share your results, with this link
+            <a href="https://herbex.co.za/" style="text-decoration: none" target="_blank">www.herbex.co.za</a>, tag and
+            follow us on Instagram
+            <a href="https://www.instagram.com/herbexhealth/" style="text-decoration: none" target="_blank"
+              rel="noopener noreferrer">@herbexhealth</a>. A few lucky participants stand a chance to win a Herbex
+            Hamper
+            packed full of Herbex products to support your weight loss
+            mission. Plus personalised advice and guidance from our dedicated
+            Customer Relations Team
+          </p>
+          <div class="col mt-2">
+            <div class="row d-flex justify-content-between">
+              <button class="btn btn-primary col-md-5 mb-2" type="button" onclick="downloadImages()">
+                Download
+              </button>
+              <!-- <button class="btn btn-primary col-md-5 mb-2 show-modal" type="button" id="shareButton" onclick="shareContent()"> -->
+              <button class="btn btn-primary col-md-5 mb-2" type="button" id="shareButton">
+                Share
+              </button>
+            </div>
+          </div>
+        </span>
+
+        <span class="spn" id="loading">
+          <h1>Don't Refresh the page!</h1>
+          <p>It takes time to <span style="color: #FF43A1;">IGNITE YOUR HOTTEST SHAPE</span>, 
+          especially with custom outfits and scenes. 
+          Please do not refresh the page as it makes the process slower</p>
+          <img src="" class="img-fluid" id="generatedImages" style="height: 200px;" src="/static/public/left-bottom-img.png">
+          <span class="d-flex justify-content-center">
+            <button class="btn btn-primary col-6 mt-4" type="button" disabled> 
+              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+              Loading...
+          </button>
+        </span>
+      </div>
+
+      <!-- Start Share Modal -->
+      <section class="share_popup">
+        <span class="overlay"></span>
+
+        <div class="modal-box">
+          <h2>Share your results on</h2>
+
+          <div class="content">
+            <ul class="icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End share Modal -->
+    </div>
+  </div>
+  <!-- End Popup Section -->
+
+
+  <!-- Template Main JS File -->
+  <script src="/static/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.6.0/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
